@@ -1,0 +1,294 @@
+<!-- Appointment Letter (Healing Hands Clinic) - edit wording here; values in double curly braces are filled by the system. HHC letterhead header/footer are added on every PDF page. -->
+<style>
+@page { size: Letter; margin: 1.7in 0.7in 1.75in 0.7in; }
+.letter { font-family: Arial, 'Liberation Sans', Helvetica, sans-serif; font-size: 9pt; line-height: 1.18; color: #000; }
+.letter p, .letter h1, .letter h2, .letter ul { margin-top: 0; }
+.letter h1 { font-size: 15pt; font-weight: bold; text-align: center; margin-bottom: 6pt; line-height: 1.15; }
+.letter h2 { font-size: 9.5pt; font-weight: bold; }
+.letter .j { text-align: justify; }
+.letter .c { text-align: center; }
+.letter ul { margin-bottom: 0; padding-left: 0.42in; }
+.letter li { padding-left: 2pt; }
+.letter .pb { page-break-before: always; break-before: page; }
+.letter table.annex { width: 100%; border-collapse: collapse; margin: 4pt 0 8pt; font-size: 9pt; }
+.letter table.annex th, .letter table.annex td { border: 0.75pt solid #000; padding: 3pt 6pt; }
+.letter table.annex th { background: #f2f2f2; text-align: left; }
+.letter table.annex .r { text-align: right; }
+.letter table.annex tr.grp td { font-weight: bold; background: #fafafa; }
+.letter table.annex tr.tot td { font-weight: bold; }
+.letter h2 { page-break-after: avoid; break-after: avoid; }
+.letter, .letter * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.letter .lh-screen { display: none; }
+.letter .keep { page-break-inside: avoid; break-inside: avoid; }
+@media print { .letter .pb { padding-top: 16pt; } }
+@media screen {
+  body { background: #e9eef2; margin: 0; padding: 16px 0; }
+  .letter { background: #fff; width: 8.5in; max-width: 100%; box-sizing: border-box; padding: 0 0.7in 0.2in; margin: 0 auto; box-shadow: 0 2px 12px rgba(0,0,0,.12); }
+  .letter .lh-screen { display: block; width: calc(100% + 2 * 0.7in); margin: 0 -0.7in 12pt; }
+  .letter .lh-screen.lh-foot { margin: 24pt -0.7in -0.2in; }
+  .letter .pb { border-top: 1px dashed #b8c4cc; margin-top: 28pt; padding-top: 28pt; }
+}
+</style>
+<div class="letter" data-letterhead="hhc">
+<img class="lh-screen" src="{{letterhead_header_src}}" alt="">
+<h1>APPOINTMENT LETTER</h1>
+<p style="margin-bottom:2.0pt">Ref: HHC/HR/{{employee_code}}</p>
+<p style="margin-bottom:3.0pt">Date: {{letter_date}}</p>
+<div class="gap" style="height:12.3pt"></div>
+<p style="margin-bottom:2.0pt">To,</p>
+<p style="margin-bottom:3.0pt">{{candidate_name}}<br>{{designation}}<br>{{location}}</p>
+<div class="gap" style="height:13.3pt"></div>
+<p style="margin-bottom:3.0pt"><b>Subject: Appointment as {{designation}}</b></p>
+<div class="gap" style="height:13.3pt"></div>
+<p style="margin-bottom:3.0pt">Dear {{salutation}} {{last_name}},</p>
+<div class="gap" style="height:12.3pt"></div>
+<p class="j" style="margin-bottom:2.0pt">We are pleased to confirm your appointment as <b>{{designation}} </b>with Healing Hands Clinic Private Limited (“HHCPL” or the “Company”), effective <b>{{date_of_joining}}</b>, pursuant to your having joined the services of the Company on the said date.</p>
+<p class="j" style="margin-bottom:2.0pt">This Appointment Letter sets out the principal terms and conditions governing your employment with HHCPL and, together with the applicable Company policies and Annexure A, constitutes the employment framework applicable to you. It supersedes prior communications concerning the appointment to the extent of any inconsistency, subject always to applicable law.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">1. ROLE, REPORTING AND DUTIES</h2>
+<div class="gap" style="height:2.1pt"></div>
+<p style="margin-bottom:2.0pt">1.1 You are appointed as <b>{{designation}}</b> within the <b>{{department}}.</b></p>
+<p style="margin-bottom:2.0pt">1.2 You will report to <b>{{reporting_manager}}</b> or to such other person as HHCPL may designate from time to time.</p>
+<p style="margin-bottom:2.0pt">1.3 Your duties, responsibilities, authority and scope of work shall be aligned to your role and may reasonably evolve in accordance with organisational requirements, business needs, restructuring, technology, patient-care requirements, regulatory requirements or other legitimate business considerations.</p>
+<p style="margin-bottom:2.0pt">1.4 You shall perform your duties diligently, honestly, professionally and in accordance with lawful and reasonable instructions, and devote your working time and professional attention to HHCPL.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">2. PLACE OF POSTING, TRANSFER AND DEPLOYMENT</h2>
+<div class="gap" style="height:2.1pt"></div>
+<p class="j" style="margin-bottom:2.0pt">2.1 Your initial place of posting shall be <b>{{location}}.</b></p>
+<p class="j" style="margin-bottom:2.0pt">2.2 HHCPL may, based on legitimate business and operational requirements, transfer, deploy, rotate or assign you to another HHCPL clinic, office, unit, department, function or worksite in India, subject to your role and applicable law.</p>
+<p class="j" style="margin-bottom:2.0pt">2.3 Any assignment involving a separate legal entity shall be subject to appropriate legal/contractual documentation and shall not automatically transfer your employment to that entity.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">3. EMPLOYMENT STATUS</h2>
+<div class="gap" style="height:2.1pt"></div>
+<p style="margin-bottom:2.0pt">3.1 Your employment is full-time and continuous, subject to applicable law and this Letter.</p>
+<p style="margin-bottom:2.0pt">3.2 Your employment is personal to you and may not be assigned or subcontracted.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">4. PROBATION AND CONFIRMATION</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p style="margin-bottom:2.0pt">4.1 Unless otherwise stated in writing, your initial employment shall be probationary for <b>{{probation_period}}</b> from the Date of Joining.</p>
+<p style="margin-bottom:2.0pt">4.2 During probation HHCPL will assess performance, conduct, attendance, capability, suitability, role alignment and adherence to Company standards.</p>
+<p style="margin-bottom:2.0pt">4.3 Completion of probation does not by itself constitute confirmation. Confirmation shall take effect only upon written confirmation issued by HHCPL.</p>
+<p style="margin-bottom:2.0pt">4.4 HHCPL may extend probation where additional assessment is reasonably required, subject to applicable law.</p>
+<p style="margin-bottom:2.0pt">4.5 During probation, HHCPL may discontinue employment for unsatisfactory performance, lack of role suitability, misconduct, breach of policy, failure to meet role requirements or other lawful grounds, subject to applicable notice/pay-in-lieu requirements and law.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">5. COMPENSATION AND BENEFITS</h2>
+<div class="gap" style="height:4.3pt"></div>
+<p class="j" style="margin-bottom:2.0pt">5.1 Your compensation structure is detailed in <b>Annexure A</b>.</p>
+<p class="j" style="margin-bottom:2.0pt">5.2 Salary and other payments are subject to statutory deductions, taxes, contributions and lawful recoveries.</p>
+<p class="j" style="margin-bottom:2.0pt">5.3 Benefits, reimbursements and statutory contributions shall be governed by HHCPL policy and applicable law.</p>
+<p class="j" style="margin-bottom:2.0pt">5.4 Variable pay, incentives, bonuses and performance-linked payments, where applicable, are governed by the relevant scheme/policy and are not guaranteed except where expressly provided or legally required.</p>
+<p class="j" style="margin-bottom:2.0pt">5.5 Compensation information shall be treated as confidential, except where disclosure is required or protected by law.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">6. WORKING HOURS, ATTENDANCE, WEEKLY OFF AND LEAVE</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p class="j" style="margin-bottom:2.0pt">6.1 Working hours, shifts, roster, weekly off, attendance and leave shall be governed by applicable HHCPL policies and law.</p>
+<p class="j" style="margin-bottom:2.0pt">6.2 You may be required to work shifts, weekends, holidays or additional hours where lawfully permissible. Overtime/compensatory arrangements shall follow applicable law and policy.</p>
+<p class="j" style="margin-bottom:2.0pt">6.3 You must accurately record attendance and comply with HRIS, biometric and roster processes.</p>
+<p class="j" style="margin-bottom:2.0pt">6.4 Unauthorised absence may attract disciplinary action under applicable policy and law.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">7. CONFIDENTIALITY AND NON-DISCLOSURE</h2>
+<div class="gap" style="height:4.3pt"></div>
+<p class="j" style="margin-bottom:2.0pt">7.1 During and after employment, you shall maintain strict confidentiality of confidential, proprietary or non-public information relating to HHCPL, its patients, employees, doctors, vendors, franchisees/business partners and operations.</p>
+<p class="j" style="margin-bottom:2.0pt">7.2 Confidential information includes patient/clinical information, personal data, employee information, compensation data, medical records, financial information, business plans, pricing, contracts, vendor/franchisee information, recruitment data, databases, credentials, systems, processes, SOPs, reports, training material, intellectual property and trade secrets.</p>
+<p class="j" style="margin-bottom:2.0pt">7.3 You shall use such information only for authorised Company purposes and shall not copy, disclose, publish, transmit, remove, misuse or permit unauthorised access.</p>
+<p class="j" style="margin-bottom:2.0pt">7.4 These obligations survive separation for so long as the information remains confidential or protected by law.</p>
+<p class="j" style="margin-bottom:2.0pt">7.5 Nothing prevents disclosure required or protected by law.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">8. DATA PROTECTION AND INFORMATION SECURITY</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p class="j" style="margin-bottom:2.0pt">8.1 You shall comply with applicable privacy, data-protection, cyber-security and information-security laws and HHCPL policies.</p>
+<p class="j" style="margin-bottom:2.0pt">8.2 HHCPL may collect, use, store, process and share your personal information for legitimate employment, payroll, benefits, statutory, compliance, verification, security and administrative purposes in accordance with law.</p>
+<p class="j" style="margin-bottom:2.0pt">8.3 Access to patient, employee, clinical, financial and other sensitive information shall be strictly authorised and need-to-know.</p>
+<p class="j" style="margin-bottom:2.0pt">8.4 You shall safeguard Company devices, passwords and information and immediately report suspected loss, unauthorised access, disclosure or data breach.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">9. INTELLECTUAL PROPERTY AND WORK PRODUCT</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p class="j" style="margin-bottom:2.0pt">9.1 To the extent permitted by law, work product, documents, reports, presentations, training material, policies, processes, templates, designs, databases, content, analyses, inventions, improvements, systems, software configurations and other material created/developed in the course of employment or using HHCPL resources/confidential information shall belong to HHCPL.</p>
+<p class="j" style="margin-bottom:2.0pt">9.2 You shall execute reasonable documents required to record or protect HHCPL’s rights in such work product.</p>
+<p class="j" style="margin-bottom:2.0pt">9.3 You shall not use or commercialise HHCPL proprietary material for unauthorised purposes.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">10. CODE OF CONDUCT AND COMPANY POLICIES</h2>
+<div class="gap" style="height:4.3pt"></div>
+<p class="j" style="margin-bottom:2.0pt">10.1 You shall comply with all applicable HHCPL policies, SOPs, circulars, codes and lawful instructions, including:</p>
+<ul>
+<li style="margin-bottom:0.0pt">Code of Conduct</li>
+<li style="margin-bottom:0.0pt">POSH and workplace-dignity requirements</li>
+<li style="margin-bottom:0.0pt">Conflict of Interest and Outside Engagement Policy</li>
+<li style="margin-bottom:0.0pt">IT, Information Security and Data Protection policies</li>
+<li style="margin-bottom:0.0pt">Attendance, Leave and Working Hours policies</li>
+<li style="margin-bottom:0.0pt">Patient-safety, clinical and operational protocols applicable to your role</li>
+<li style="margin-bottom:0.0pt">Grievance and disciplinary policies</li>
+</ul>
+<div class="gap" style="height:12.3pt"></div>
+<p class="j pb" style="margin-bottom:2.0pt">10.2 HHCPL may introduce, amend, replace or withdraw operational, procedural and administrative policies from time to time, subject to applicable law.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">11. CONFLICT OF INTEREST AND OUTSIDE ENGAGEMENT</h2>
+<div class="gap" style="height:4.3pt"></div>
+<p class="j" style="margin-bottom:2.0pt">11.1 You shall avoid actual, potential or perceived conflicts and promptly disclose material conflicts.</p>
+<p class="j" style="margin-bottom:2.0pt">11.2 During employment, you shall not undertake other employment, consultancy, professional engagement, business activity, directorship, partnership or similar engagement that conflicts with HHCPL’s interests, interferes with your duties or is prohibited by policy, without prior written approval.</p>
+<p class="j" style="margin-bottom:2.0pt">11.3 You shall not use HHCPL information, relationships, resources or position for unauthorised personal or third-party benefit.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">12. PROFESSIONAL LICENCES, REGISTRATIONS AND CREDENTIALS</h2>
+<div class="gap" style="height:4.3pt"></div>
+<p class="j" style="margin-bottom:2.0pt">Where your role requires a licence, registration, certification or statutory credential, you shall maintain it in valid status and immediately disclose suspension, expiry, restriction or cancellation. You shall not undertake duties for which a mandatory credential is required unless the requirement is satisfied. </p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">13. NOTICE PERIOD AND TERMINATION</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p class="j" style="margin-bottom:2.0pt">13.1 Either party may terminate employment by the applicable written notice prescribed for the employee’s category under HHCPL policy/terms in force from time to time, subject to applicable law.</p>
+<p class="j" style="margin-bottom:2.0pt">13.2 During probation, the applicable notice period shall be 30 days unless a different period is expressly stated in writing for the role, subject to law.</p>
+<p class="j" style="margin-bottom:2.0pt">13.3 After confirmation, the applicable notice period shall be the period specified in the employee’s applicable HHCPL terms/policy, subject to law.</p>
+<p class="j" style="margin-bottom:2.0pt">13.4 Where permitted by law and policy, HHCPL may waive/reduce notice, accept payment in lieu, or release an employee earlier, confirmed in writing.</p>
+<p class="j" style="margin-bottom:2.0pt">13.5 During notice you shall continue duties, complete handover and return Company property unless otherwise directed.</p>
+<p class="j" style="margin-bottom:2.0pt">13.6 Where lawfully permissible, HHCPL may relieve you from active duties, restrict access or place you on garden leave during notice while continuing applicable pay/benefits.</p>
+<p class="j" style="margin-bottom:2.0pt">13.7 Nothing limits HHCPL’s right to take lawful disciplinary action for misconduct, fraud, material breach, unauthorised absence or other grounds warranting termination.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">14. DISCIPLINARY ACTION</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p class="j" style="margin-bottom:2.0pt">14.1 HHCPL may take corrective/disciplinary action for misconduct, fraud, dishonesty, material misrepresentation, confidentiality breach, unauthorised access/disclosure, serious negligence, wilful disobedience, insubordination, conflict of interest, unauthorised absence, misuse of Company property/systems or policy breach.</p>
+<p class="j" style="margin-bottom:2.0pt">14.2 Measures may include counselling, warning, suspension, lawful recovery or termination, as applicable.</p>
+<p class="j" style="margin-bottom:2.0pt">14.3 Where misconduct proceedings are required, HHCPL shall follow applicable law, standing orders where applicable, Company process and principles of natural justice.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">15. ABSENCE, ABANDONMENT AND ABSENCE WITHOUT AUTHORISATION</h2>
+<div class="gap" style="height:4.3pt"></div>
+<p class="j" style="margin-bottom:2.0pt">15.1 Absence without approval/sufficient cause, failure to report for duty, or leaving employment without completing the applicable separation process may constitute unauthorised absence or abandonment, as applicable.</p>
+<p class="j" style="margin-bottom:2.0pt">15.2 Where an employee remains absent without approval/intimation for the period prescribed by HHCPL policy, HHCPL may initiate its absence/abandonment process and issue notices through recorded contact details.</p>
+<p class="j" style="margin-bottom:2.0pt">15.3 The employee shall be given a reasonable opportunity to explain the absence where required by law or Company process.</p>
+<p class="j" style="margin-bottom:2.0pt">15.4 If no satisfactory explanation is received within the period specified in the notice, HHCPL may take an appropriate decision regarding continuation or cessation of employment in accordance with law and procedure.</p>
+<p class="j" style="margin-bottom:2.0pt">15.5 No salary or benefit shall be payable for unauthorised absence except where required by law. HHCPL may recover notice-period pay or other amounts lawfully recoverable, subject to law.</p>
+<p class="j" style="margin-bottom:2.0pt">15.6 Employment/service records and separation documents shall accurately reflect the factual status and manner of separation.</p>
+<p class="j" style="margin-bottom:2.0pt">15.7 Re-employment following abandonment/absconding is not an entitlement and remains subject to prevailing HHCPL policy and management approval.</p>
+<div class="gap" style="height:11.9pt"></div>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">16. COMPANY PROPERTY, RECORDS AND ACCESS</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p class="j" style="margin-bottom:2.0pt">All Company devices, ID/access cards, keys, documents, records, equipment, software, credentials and data shall be protected and returned on request or separation. You shall not retain copies of Company confidential information except where legally required.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">17. HANDOVER AND FULL &amp;amp; FINAL SETTLEMENT</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p class="j" style="margin-bottom:2.0pt">17.1 On separation you shall complete proper handover of responsibilities, records, assets, pending matters and other Company property.</p>
+<p class="j" style="margin-bottom:2.0pt">17.2 Full and final settlement shall be processed in accordance with applicable law and HHCPL process, after lawful deductions/recoveries.</p>
+<p class="j" style="margin-bottom:2.0pt">17.3 Nothing in this Letter authorises forfeiture or deduction contrary to applicable law. </p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">18. BACKGROUND VERIFICATION AND CONTINUING DISCLOSURE</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p class="j" style="margin-bottom:2.0pt">HHCPL may conduct or commission background, reference, credential, employment, education, identity and professional-registration verification relevant to employment, subject to law. You shall cooperate and provide accurate information. Material falsification, concealment or misrepresentation may result in appropriate action, including termination where legally permissible and procedurally required.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">19. EMPLOYEE DECLARATIONS AND UNDERTAKINGS</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p style="margin-bottom:2.0pt">By accepting this Letter, you confirm that:</p>
+<ul>
+<li style="margin-bottom:0.0pt">information/documents provided are true, accurate and complete to the best of your knowledge</li>
+<li style="margin-bottom:0.0pt">qualifications, experience, registrations and credentials submitted are genuine and valid</li>
+<li style="margin-bottom:0.0pt">you have disclosed material restrictions affecting your ability to perform the role</li>
+<li style="margin-bottom:0.0pt">you are not knowingly accepting employment in breach of an enforceable obligation owed to another person/organisation</li>
+<li style="margin-bottom:0.0pt">you will promptly notify HHCPL of any material change in the information provided</li>
+</ul>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">20. MEDICAL FITNESS AND ROLE-RELATED REQUIREMENTS</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p class="j" style="margin-bottom:2.0pt">Where reasonably required for occupational safety, patient safety, insurance, statutory, regulatory or role-specific purposes, HHCPL may require appropriate fitness or role-related assessments in accordance with applicable law. Such information shall be handled confidentially and without unlawful discrimination.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">21. WORKPLACE DIGNITY, POSH AND NON-DISCRIMINATION</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p class="j" style="margin-bottom:2.0pt">HHCPL is committed to a safe, respectful and professional workplace. You shall comply with applicable anti-harassment, POSH, anti-discrimination and workplace-dignity requirements and cooperate with authorised investigations. Complaints shall be handled through mechanisms prescribed by law and Company policy.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">22. COMMUNICATIONS AND OFFICIAL RECORDS</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p class="j" style="margin-bottom:2.0pt">22.1 Official employment communications may be issued through Company email, HRIS, registered address, recorded mobile/electronic channels or other authorised means, subject to law.</p>
+<p class="j" style="margin-bottom:2.0pt">22.2 You shall keep contact, bank, address and other employment records accurate and promptly report changes.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">23. GOVERNING LAW AND JURISDICTION</h2>
+<div class="gap" style="height:4.3pt"></div>
+<p class="j" style="margin-bottom:2.0pt">23.1 This Letter is governed by the laws applicable in India.</p>
+<p class="j" style="margin-bottom:2.0pt">23.2 Subject to any mandatory statutory forum, authority, conciliation, tribunal or other dispute-resolution mechanism, courts/competent authorities having jurisdiction at Pune, Maharashtra shall have jurisdiction over matters arising from or relating to this Letter.</p>
+<p class="j" style="margin-bottom:2.0pt">23.3 Nothing limits any non-waivable statutory right or mandatory forum.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">24. SEVERABILITY</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p class="j" style="margin-bottom:2.0pt">If any provision is held invalid, unlawful or unenforceable, it shall be modified/limited to the minimum extent necessary, and the remaining provisions shall continue to apply to the extent permitted by law.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">25. ENTIRE UNDERSTANDING AND PRECEDENCE</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p class="j" style="margin-bottom:2.0pt">This Letter, Annexure A and applicable HHCPL policies constitute the written employment framework, subject to law. In case of inconsistency, mandatory law prevails; thereafter, the specific written terms of this Letter prevail over general policy language to the extent of inconsistency, unless the policy provision is mandatory by law or expressly incorporated as controlling.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">26. POLICY AMENDMENTS</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p class="j" style="margin-bottom:2.0pt">HHCPL may amend operational, administrative, procedural and benefit policies prospectively to reflect business or legal requirements, subject to applicable law. No amendment shall remove a mandatory statutory entitlement.</p>
+<div class="gap" style="height:11.9pt"></div>
+<h2 style="margin-top:3.0pt;margin-bottom:1.0pt">27. ACCEPTANCE</h2>
+<div class="gap" style="height:3.1pt"></div>
+<p class="j" style="margin-bottom:2.0pt">Please sign and return a copy of this Letter as acknowledgment of your appointment and acceptance. By signing, you confirm that you have read and understood the terms and had an opportunity to seek clarification.</p>
+<p class="j" style="margin-bottom:2.0pt">We welcome you to Healing Hands Clinic Private Limited and look forward to a professional and mutually beneficial association.</p>
+<div class="gap" style="height:16.4pt"></div>
+<div class="gap" style="height:16.4pt"></div>
+<div class="keep">
+<p style="margin-bottom:6.0pt">Yours sincerely,</p>
+<p style="margin-bottom:6.0pt"><b>For Healing Hands Clinic Private Limited</b></p>
+{{#if signature_html}}{{signature_html}}{{/if}}{{#unless signature_html}}<div class="gap" style="height:16.4pt"></div>
+<div class="gap" style="height:16.4pt"></div>
+{{/unless}}
+<p style="margin-bottom:2.0pt"><b>{{hr_signatory_name}}</b></p>
+<p style="margin-bottom:10pt"><b>{{hr_signatory_designation}}</b></p>
+</div>
+<div class="gap" style="height:14.5pt"></div>
+<div class="gap" style="height:14.5pt"></div>
+<div class="gap" style="height:14.5pt"></div>
+<div class="gap" style="height:14.5pt"></div>
+<div class="keep">
+<p class="c" style="margin-bottom:3.0pt"><b>EMPLOYEE ACCEPTANCE</b></p>
+<div class="gap" style="height:13.3pt"></div>
+<p class="j" style="margin-bottom:2.0pt">I, <b>{{candidate_name}},</b> acknowledge that I have read and understood this Appointment Letter and Annexure A and accept the terms and conditions governing my employment with Healing Hands Clinic Private Limited.</p>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<p style="margin-bottom:2.0pt">Signature: ___________________________&nbsp;&nbsp;&nbsp;&nbsp;Date: ______________</p>
+</div>
+<div class="gap" style="height:18.4pt"></div>
+<p style="margin-bottom:8.0pt">Employee Code: <b>{{employee_code}}</b>&nbsp;&nbsp;&nbsp;&nbsp;Place: ______________</p>
+<div class="gap" style="height:14.5pt"></div>
+<div class="gap" style="height:14.5pt"></div>
+<p class="c pb" style="margin-bottom:3.0pt"><b>ANNEXURE A – COMPENSATION STATEMENT</b></p>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<p class="j" style="margin-bottom:2.0pt">Detailed salary/CTC structure: {{#unless include_ctc}}To be attached / inserted as applicable.{{/unless}}</p>{{#if include_ctc}}{{ctc_annexure_html}}{{/if}}
+<div class="gap" style="height:12.3pt"></div>
+<p class="j" style="margin-bottom:2.0pt">All salary components are subject to applicable statutory deductions, taxes, contributions and applicable HHCPL policies/schemes.</p>
+{{#unless include_ctc}}<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+<div class="gap" style="height:12.3pt"></div>
+{{/unless}}{{#if include_ctc}}<div class="gap" style="height:36pt"></div>{{/if}}
+<div class="keep">
+<p style="margin-bottom:6.0pt">Yours sincerely,</p>
+<p style="margin-bottom:6.0pt"><b>For Healing Hands Clinic Private Limited</b></p>
+{{#if signature_html}}{{signature_html}}{{/if}}{{#unless signature_html}}<div class="gap" style="height:16.4pt"></div>
+<div class="gap" style="height:16.4pt"></div>
+{{/unless}}
+<p style="margin-bottom:2.0pt"><b>{{hr_signatory_name}}</b></p>
+<p style="margin-bottom:10pt"><b>{{hr_signatory_designation}}</b></p>
+</div>
+<div class="gap" style="height:12.3pt"></div>
+<img class="lh-screen lh-foot" src="{{letterhead_footer_src}}" alt="">
+</div>

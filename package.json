@@ -1,0 +1,24 @@
+{
+  "name": "hhc-recruitment-api",
+  "version": "1.0.0",
+  "description": "Recruitment module API - Healing Hands",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch-path=./src src/server.js",
+    "dev:nowatch": "node src/server.js",
+    "db:setup": "node scripts/migrate.js",
+    "db:upgrade": "node scripts/upgrade.js",
+    "mail:test": "node scripts/mail-test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.3",
+    "nodemailer": "^6.9.15",
+    "puppeteer": "^23.5.0"
+  }
+}
